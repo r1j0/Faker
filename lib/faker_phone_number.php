@@ -10,6 +10,4 @@ class FakerPhoneNumber extends FakerProperty {
 	}
 }
 
-
-
 ?>
