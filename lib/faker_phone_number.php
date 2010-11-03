@@ -6,7 +6,10 @@ class FakerPhoneNumber extends FakerProperty {
 	
 	
 	public function getValue() {
-		return $this->_FakerUtility->numerify($this->_FakerUtility->getRandomElement($this->_DataStore->getFormat()));
+		$format = $this->_FakerUtility->numerify($this->_FakerUtility->getRandomElement($this->_DataStore->getFormat()));
+		$areaCode = $this->_FakerUtility->getRandomElement($this->_DataStore->getAreaCodes());
+		
+		return str_replace('-AREA_CODE-', $areaCode, $format);
 	}
 }
 

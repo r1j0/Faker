@@ -6,6 +6,7 @@ require_once('lib/faker_store.php');
 require_once('lib/faker_property.php');
 
 require_once('lib/faker_phone_number.php');
+require_once('lib/faker_phone_number_store.php');
 require_once('lib/faker_de_phone_number_store.php');
 require_once('lib/faker_en_phone_number_store.php');
 
